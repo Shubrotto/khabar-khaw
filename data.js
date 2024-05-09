@@ -7,27 +7,27 @@ import Image5 from "./src/assets/images/hero5.png";
 const heros = [
   {
     id: 1,
-    title: "If you taste food you will love it",
+    title: "How Taste Leads to Love: Exploring the Culinary Connection",
     image: Image1,
   },
   {
     id: 2,
-    title: "If you taste food you will love it",
+    title: "How Taste Leads to Love: Exploring the Culinary Connection",
     image: Image2,
   },
   {
     id: 3,
-    title: "If you taste food you will love it",
+    title: "How Taste Leads to Love: Exploring the Culinary Connection",
     image: Image3,
   },
   {
     id: 4,
-    title: "If you taste food you will love it",
+    title: "How Taste Leads to Love: Exploring the Culinary Connection",
     image: Image4,
   },
   {
     id: 5,
-    title: "If you taste food you will love it",
+    title: "How Taste Leads to Love: Exploring the Culinary Connection",
     image: Image5,
   },
 ];
