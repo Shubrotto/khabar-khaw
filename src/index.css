@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #ffcc33;
+  --hero_text_color: #000df9;
+  --hero_text_span_color: #ff0000;
+  --text-color: #6a0014;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
