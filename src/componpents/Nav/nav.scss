@@ -1,0 +1,28 @@
+.nav_list {
+  display: flex;
+  align-items: center;
+
+  .nav_item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 10px;
+    font-style: italic;
+    cursor: pointer;
+
+    .nav_link {
+      padding: 5px 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: var(--transition);
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.4);
+        color: white;
+      }
+    }
+  }
+}

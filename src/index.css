@@ -12,6 +12,7 @@
   --hero_text_color: #000df9;
   --hero_text_span_color: #ff0000;
   --text-color: #6a0014;
+  --transition: 0.7s;
 }
 
 body {
