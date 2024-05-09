@@ -1,11 +1,9 @@
-import Footer from "../Layouts/Footer/Footer";
-import Navbar from "../Layouts/Navbar/Navbar";
+import Hero from "../componpents/Hero/Hero";
 
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <Footer />
+      <Hero />
     </>
   );
 };

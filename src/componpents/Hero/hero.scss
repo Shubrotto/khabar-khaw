@@ -1,0 +1,66 @@
+.hero_container {
+  width: 100%;
+  height: calc(100vh - 80px);
+  padding: 50px 0;
+  //   position: fixed;
+
+  .hero_wrapper {
+    padding: 0 100px;
+
+    .item {
+      display: flex;
+      align-items: center;
+
+      .item_left {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .cook_img {
+          width: 40% !important;
+          object-fit: cover;
+          margin-bottom: 10px;
+        }
+
+        h1 {
+          font-size: 50px;
+          font-weight: 700;
+          margin-bottom: 20px;
+          width: 70%;
+          color: red;
+        }
+
+        .input_main {
+          display: flex;
+          align-items: center;
+
+          input {
+            border: 3px solid var(--bg-color);
+            padding: 5px;
+          }
+
+          .input_btn {
+            font-size: 18px;
+            background: var(--bg-color);
+            color: var(--text-color);
+            padding: 3px 5px;
+            border-top-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            font-weight: 700;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .item_right {
+        width: 100%;
+        img {
+          //   width: 100%;
+          //   object-fit: cover;
+          height: 450px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

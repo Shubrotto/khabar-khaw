@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="navbar_container">
       <div className="navbar_wrapper">
         <div className="navbar_left">
-          <Link className="header_title">
+          <Link to="/" className="header_title">
             Kh<span>a</span>b<span>a</span>r Kh<span>a</span>w
           </Link>
           <hr className="border_top" />
