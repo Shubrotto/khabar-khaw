@@ -6,6 +6,7 @@ import Navbar from "./Layouts/Navbar/Navbar";
 import Footer from "./Layouts/Footer/Footer";
 import Items from "./componpents/Items/Items";
 import About from "./componpents/About/About";
+import Contact from "./componpents/Contact/Contact";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/items" element={<Items />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route exact path="/*" element={<NotFound />} />
       </Routes>
       <Footer />
