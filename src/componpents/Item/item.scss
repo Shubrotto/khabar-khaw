@@ -1,0 +1,39 @@
+.item_container {
+  padding: 20px 0;
+  .item_wrapper {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin: 20px 0;
+    }
+
+    .item_info {
+      display: flex;
+      width: 100;
+      gap: 20px;
+
+      img {
+        // width: 60%;
+        width: 250px;
+      }
+
+      .item_info_price_desc {
+        .price {
+          font-size: 22px;
+          font-weight: 700;
+        }
+
+        .desc {
+          font-size: 18px;
+          line-height: 30px;
+
+          .name {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

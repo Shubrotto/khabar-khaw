@@ -7,6 +7,7 @@ import Footer from "./Layouts/Footer/Footer";
 import Items from "./componpents/Items/Items";
 import About from "./componpents/About/About";
 import Contact from "./componpents/Contact/Contact";
+import Item from "./componpents/Item/Item";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/items" element={<Items />} />
+        <Route path="/item/:id" element={<Item />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route exact path="/*" element={<NotFound />} />
