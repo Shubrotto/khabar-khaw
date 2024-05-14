@@ -1,7 +1,6 @@
 import Carousel from "react-material-ui-carousel";
-import { Paper, Button } from "@mui/material";
 import "./hero.scss";
-import heros from "../../../data";
+import { heros } from "../../../data";
 import imageLeft from "../../assets/images/hero1_left1.png";
 
 const Hero = () => {
