@@ -1,19 +1,42 @@
+import { useState } from "react";
 import { itemsCombo, itemsMixingCombo, AllItems } from "../../../data";
 import "./item.scss";
+import { Link } from "react-router-dom";
 
 const Items = () => {
+  const [viewItem, setViewItem] = useState(false);
   // console.log(item);
+  const handleViewItem = () => {
+    setViewItem(true);
+  };
   return (
     <div className="item_container">
       <div className="item_wrapper">
         <h2>Combo(Pizza, Burger, Soft-Drink)</h2>
         <div className="items">
           {itemsCombo.map((item) => (
-            <div className="item" key={item.id}>
-              <img src={item.image} alt="" />
-              <h4>{item.title}</h4>
-              <p>Price {item.price}/Tk</p>
-            </div>
+            <>
+              <div key={item.id} className="item">
+                <div className="item_img">
+                  <img src={item.image} alt="" />
+                  <div className="overlay" key={item.id}>
+                    {viewItem ? (
+                      <button onClick={() => handleViewItem(item.id)}>
+                        <Link className="food_btn" to="/item/:id">
+                          View Food Item
+                        </Link>
+                      </button>
+                    ) : (
+                      <button onClick={() => handleViewItem(item.id)}>
+                        Add to Cart
+                      </button> // for handle add to cart here
+                    )}
+                  </div>
+                </div>
+                <h4>{item.title}</h4>
+                <p>Price {item.price}/Tk</p>
+              </div>
+            </>
           ))}
         </div>
         <h2 style={{ marginTop: "15px" }}>
@@ -22,7 +45,20 @@ const Items = () => {
         <div className="items">
           {itemsMixingCombo.map((item) => (
             <div className="item" key={item.id}>
-              <img src={item.image} alt="" />
+              <div className="item_img">
+                <img src={item.image} alt="" />
+                <div className="overlay">
+                  {viewItem ? (
+                    <button onClick={handleViewItem}>
+                      <Link className="food_btn" to="/item/:id">
+                        View Food Item
+                      </Link>
+                    </button>
+                  ) : (
+                    <button onClick={handleViewItem}>Add to Cart</button>
+                  )}
+                </div>
+              </div>
               <h4>{item.title}</h4>
               <p>Price {item.price}/Tk</p>
             </div>
@@ -34,7 +70,20 @@ const Items = () => {
         <div className="items">
           {AllItems.map((item) => (
             <div className="item" key={item.id}>
-              <img src={item.image} alt="" />
+              <div className="item_img">
+                <img src={item.image} alt="" />
+                <div className="overlay">
+                  {viewItem ? (
+                    <button onClick={handleViewItem}>
+                      <Link className="food_btn" to="/item/:id">
+                        View Food Item
+                      </Link>
+                    </button>
+                  ) : (
+                    <button onClick={handleViewItem}>Add to Cart</button>
+                  )}
+                </div>
+              </div>
               <h4>{item.title}</h4>
               <p>Price {item.price}/Tk</p>
             </div>
