@@ -8,13 +8,18 @@ import Items from "./componpents/Items/Items";
 import About from "./componpents/About/About";
 import Contact from "./componpents/Contact/Contact";
 import Item from "./componpents/Item/Item";
+import Register from "./pages/Register/Register";
+import Login from "./pages/Login/Login";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Routes>
+      <Routes outlet={<Navbar />}>
         <Route exact path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/items" element={<Items />} />
         <Route path="/item/:id" element={<Item />} />
         <Route path="/about" element={<About />} />
