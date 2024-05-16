@@ -11,6 +11,7 @@ import Item from "./componpents/Item/Item";
 import Register from "./pages/Register/Register";
 import Login from "./pages/Login/Login";
 import Reset from "./pages/Reset";
+import Otp from "./pages/Otp";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
       <Routes outlet={<Navbar />}>
         <Route exact path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/reset" element={<Reset />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/otp" element={<Otp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/items" element={<Items />} />
         <Route path="/item/:id" element={<Item />} />
