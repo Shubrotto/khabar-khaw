@@ -15,12 +15,13 @@ import Otp from "./pages/Otp";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={`/khabar-khaw`}>
       <Navbar />
       <Routes outlet={<Navbar />}>
         <Route exact path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/reset" element={<Reset />} />
         <Route path="/otp" element={<Otp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/items" element={<Items />} />
